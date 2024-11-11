@@ -26,9 +26,12 @@ const Courses = () => {
       <h1 className="my-4 text-3xl font-bold">
         {data.title}
       </h1>
-      <SanityContent value={data.description} />
+      <SanityContent
+        styleNames="max-w-max"
+        value={data.description}
+      />
       <Accordion
-        className="mt-4 max-w-prose p-0"
+        className="mt-4 p-0"
         variant="splitted"
       >
         {map(data.courseSections, (section) => {
@@ -37,12 +40,18 @@ const Courses = () => {
               key={section._id}
               title={section.title}
             >
-              <div className="prose max-w-max text-foreground">
-                <SanityContent value={section.description} />
-                <ul className="list-decimal">
+              <div className="text-foreground">
+                <SanityContent
+                  styleNames="max-w-max"
+                  value={section.description}
+                />
+                <ul className="my-4 list-inside list-decimal">
                   {map(section.courses, (course) => {
                     return (
-                      <li key={course._id}>
+                      <li
+                        className="my-2"
+                        key={course._id}
+                      >
                         <Link
                           isExternal
                           href={course.url}
