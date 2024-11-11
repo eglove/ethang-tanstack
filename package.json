@@ -3,36 +3,18 @@
   "version": "0.0.0",
   "private": true,
   "type": "module",
+  "scripts": {
+    "build": "vite build",
+    "dev": "vite --port=3001",
+    "lint": "eslint . --fix",
+    "serve": "vite preview",
+    "start": "vite",
+    "typecheck": "tsc --noEmit"
+  },
   "browserslist": [
     "defaults and fully supports es6-module",
     "maintained node versions"
   ],
-  "scripts": {
-    "typecheck": "tsc --noEmit",
-    "dev": "vite --port=3001",
-    "build": "vite build",
-    "serve": "vite preview",
-    "start": "vite",
-    "lint": "eslint . --fix"
-  },
-  "devDependencies": {
-    "@ethang/eslint-config": "^19.14.10",
-    "@ethang/project-builder": "^3.0.1",
-    "@portabletext/types": "^2.0.13",
-    "@tailwindcss/typography": "^0.5.15",
-    "@tanstack/router-plugin": "^1.79.0",
-    "@types/lodash": "^4.17.13",
-    "@types/luxon": "^3.4.2",
-    "@types/react": "^18.3.3",
-    "@types/react-dom": "^18.3.0",
-    "@vitejs/plugin-react": "^4.3.2",
-    "autoprefixer": "^10.4.20",
-    "eslint": "^9.14.0",
-    "postcss": "^8.4.48",
-    "tailwindcss": "^3.4.14",
-    "typescript-eslint": "^8.13.0",
-    "vite": "^5.4.8"
-  },
   "dependencies": {
     "@legendapp/state": "^3.0.0-beta.17",
     "@nextui-org/react": "^2.4.8",
@@ -52,5 +34,23 @@
     "react-dom": "^18.3.1",
     "sanity-image": "^0.2.0",
     "tailwind-merge": "^2.5.4"
+  },
+  "devDependencies": {
+    "@ethang/eslint-config": "^19.15.0",
+    "@ethang/project-builder": "^3.0.1",
+    "@portabletext/types": "^2.0.13",
+    "@tailwindcss/typography": "^0.5.15",
+    "@tanstack/router-plugin": "^1.79.0",
+    "@types/lodash": "^4.17.13",
+    "@types/luxon": "^3.4.2",
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "@vitejs/plugin-react": "^4.3.2",
+    "autoprefixer": "^10.4.20",
+    "eslint": "^9.14.0",
+    "postcss": "^8.4.48",
+    "tailwindcss": "^3.4.14",
+    "typescript-eslint": "^8.13.0",
+    "vite": "^5.4.8"
   }
 }

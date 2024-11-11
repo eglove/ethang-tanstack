@@ -4,7 +4,7 @@ import reactConfig from "@ethang/eslint-config/config.react.js";
 
 export default tseslint.config(
     {
-        ignores: ["src/routeTree.gen.ts"],
+        ignores: ["src/routeTree.gen.ts", "dist"],
     },
     ...config,
     ...reactConfig,
