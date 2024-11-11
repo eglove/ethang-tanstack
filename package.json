@@ -17,6 +17,7 @@
   },
   "devDependencies": {
     "@ethang/eslint-config": "^19.14.10",
+    "@ethang/project-builder": "^3.0.1",
     "@portabletext/types": "^2.0.13",
     "@tailwindcss/typography": "^0.5.15",
     "@tanstack/router-plugin": "^1.79.0",
